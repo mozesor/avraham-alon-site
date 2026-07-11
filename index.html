@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<!--
+  GOAL:     תיאום שיחת היכרות — וואטסאפ / טלפון
+  AUDIENCE: בעלי הון ומשפחות בישראל שרוצים סדר, שליטה ותכנון של הכסף שלהם
+  PROMISE:  הכסף שלכם יעבוד בצורה חכמה, יציבה ומדויקת
+  ACTION:   כפתור וואטסאפ עם הודעה מוכנה → wa.me/972543333637
+
+  תמונות: שים בתיקיית images/ את הקבצים הבאים (מהפייסבוק) והן יופיעו אוטומטית:
+    images/portrait.jpg  — פורטרט מקצועי (Hero)
+    images/award.jpg     — תמונת מגן ההצטיינות
+  כל עוד אין קבצים — מוצג פליסהולדר מעוצב.
+
+  גרסה חלופית בסגנון אדיטוריאלי-בהיר: index-editorial.html
+-->
+<html lang="he" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>אברהם אלון — בית לתכנון פיננסי בחיפה | ניהול הון, תכנון מס ופרישה</title>
+<meta name="description" content="תכנון פיננסי אישי ואובייקטיבי לבעלי הון: ניהול הון, השקעות, תכנון מס, פרישה והעברה בין־דורית. אברהם אלון, מתכנן פיננסי בעל רישיון מטעם משרד האוצר. חיפה.">
+<meta property="og:title" content="אברהם אלון — בית לתכנון פיננסי">
+<meta property="og:description" content="ניהול הון • השקעות • תכנון מס — תכנון פיננסי אישי ואובייקטיבי, תחת קורת גג אחת.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="he_IL">
+<meta property="og:url" content="https://a-fin.co.il/">
+<meta property="og:image" content="https://a-fin.co.il/images/portrait.jpg">
+<link rel="canonical" href="https://a-fin.co.il/">
+<meta name="theme-color" content="#081527">
+<!-- זמני לתצוגת דמו — להסיר את השורה הבאה כשעולים לדומיין האמיתי! -->
+<meta name="robots" content="noindex">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='12' fill='%230b1f3a'/><text x='32' y='46' font-family='Georgia,serif' font-weight='900' font-size='38' fill='%23d4af37' text-anchor='middle'>א</text></svg>">
+<script>document.documentElement.classList.add('js')</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@500;700;900&family=Heebo:wght@400;500;700;800&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FinancialService",
+  "name": "אברהם אלון — בית לתכנון פיננסי",
+  "url": "https://a-fin.co.il/",
+  "image": "https://a-fin.co.il/images/portrait.jpg",
+  "description": "תכנון פיננסי אישי לבעלי הון: ניהול הון, השקעות, תכנון מס, תכנון פרישה והעברה בין־דורית.",
+  "telephone": "+972-54-333-3637",
+  "email": "avraham@a-fin.co.il",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "רח' השיש 3",
+    "addressLocality": "חיפה",
+    "addressCountry": "IL"
+  },
+  "sameAs": ["https://www.facebook.com/profile.php?id=61584216245835"],
+  "areaServed": "ישראל"
+}
+</script>
+<style>
+  :root{
+    --navy:#0b1f3a; --navy-deep:#081527; --navy-soft:#12294a;
+    --gold:#c9a227; --gold-bright:#d4af37; --gold-soft:#e7cf8a; --gold-tint:#f6efd9;
+    --ink:#182234; --ink2:#51607a; --bg:#faf9f6; --card:#ffffff;
+    --line:#e7e3d8; --line-navy:rgba(212,175,55,.22);
+    --radius:18px;
+    --shadow:0 10px 34px rgba(11,31,58,.08);
+    --shadow-lg:0 24px 60px rgba(11,31,58,.16);
+    --serif:"Frank Ruhl Libre", Georgia, serif;
+    --sans:"Heebo", system-ui, -apple-system, "Segoe UI", sans-serif;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  @media (prefers-reduced-motion: reduce){ *{animation:none!important;transition:none!important} }
+  body{font-family:var(--sans);color:var(--ink);background:var(--bg);line-height:1.7;font-size:17px}
+  .wrap{max-width:1120px;margin-inline:auto;padding-inline:24px}
+  section{padding-block:88px}
+  h1,h2{font-family:var(--serif);line-height:1.2;letter-spacing:-.01em}
+  h1{font-size:clamp(34px,4.6vw,54px);font-weight:900}
+  h2{font-size:clamp(28px,3.4vw,40px);font-weight:700;margin-block-end:14px}
+  h3{font-size:20px;font-weight:700;margin-block-end:8px}
+  .sub{color:var(--ink2);font-size:18.5px;max-width:660px}
+  .center{text-align:center}.center .sub{margin-inline:auto}
+  .kicker{display:inline-flex;align-items:center;gap:10px;color:#8a6d15;font-weight:700;font-size:14.5px;letter-spacing:.14em;text-transform:uppercase;margin-block-end:18px}
+  .hero .kicker,.award .kicker,.final .kicker{color:var(--gold-bright)}
+  .kicker::before,.kicker::after{content:"";height:1px;width:34px;background:currentColor;opacity:.6}
+  .kicker.right{justify-content:flex-start}.kicker.right::after{display:none}
+
+  /* Buttons */
+  .btn{display:inline-flex;align-items:center;gap:10px;background:linear-gradient(160deg,var(--gold-bright),var(--gold));color:var(--navy-deep);font-weight:800;font-size:18px;padding:16px 34px;border-radius:999px;text-decoration:none;box-shadow:0 10px 26px rgba(201,162,39,.38);transition:transform .16s ease, box-shadow .16s ease;border:0;cursor:pointer}
+  .btn:hover{transform:translateY(-2px);box-shadow:0 14px 32px rgba(201,162,39,.48)}
+  .btn:focus-visible{outline:3px solid var(--navy);outline-offset:3px}
+  .btn svg{flex:none}
+  .btn-ghost{display:inline-flex;align-items:center;gap:9px;color:inherit;font-weight:700;font-size:17px;padding:15px 26px;border-radius:999px;text-decoration:none;border:1.5px solid var(--line-navy);transition:border-color .16s, background .16s}
+  .btn-ghost:hover{border-color:var(--gold-bright);background:rgba(212,175,55,.08)}
+  .btn-ghost:focus-visible{outline:3px solid var(--gold-bright);outline-offset:3px}
+  .micro{font-size:14.5px;margin-block-start:14px;opacity:.82}
+  .num{direction:ltr;unicode-bidi:isolate}
+
+  /* Nav */
+  .nav-bar{position:sticky;top:0;z-index:50;background:rgba(8,21,39,.86);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid rgba(212,175,55,.16)}
+  .nav-bar nav{display:flex;align-items:center;justify-content:space-between;padding-block:14px}
+  .brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:#fff}
+  .brand-mark{width:42px;height:42px;border-radius:10px;background:linear-gradient(150deg,var(--gold-bright),var(--gold) 65%);display:grid;place-items:center;font-family:var(--serif);font-weight:900;font-size:19px;color:var(--navy-deep)}
+  .brand-name{font-family:var(--serif);font-weight:700;font-size:19px;line-height:1.15}
+  .brand-sub{font-size:12px;color:var(--gold-soft);letter-spacing:.08em}
+  .nav-cta{background:transparent;border:1.5px solid var(--gold-bright);color:var(--gold-soft);box-shadow:none;font-size:15px;padding:12px 22px}
+  .nav-cta:hover{background:var(--gold-bright);color:var(--navy-deep)}
+
+  /* Hero */
+  .hero{background:
+      radial-gradient(900px 420px at 12% -10%, rgba(212,175,55,.16), transparent 62%),
+      radial-gradient(700px 480px at 105% 115%, rgba(212,175,55,.10), transparent 60%),
+      linear-gradient(165deg, var(--navy-deep) 0%, var(--navy) 58%, var(--navy-soft) 100%);
+    color:#f4f2ec;padding-block:96px}
+  .hero .grid{display:grid;grid-template-columns:1.15fr .85fr;gap:60px;align-items:center}
+  .hero .sub{color:#c4cddd}
+  .hero h1 em{font-style:normal;color:var(--gold-soft)}
+  .hero ul{list-style:none;margin-block:26px 32px}
+  .hero li{padding-block:7px;font-size:17px;color:#dee4ef;display:flex;align-items:baseline;gap:12px}
+  .hero li::before{content:"◆";color:var(--gold-bright);font-size:11px;flex:none;transform:translateY(-1px)}
+  .hero-actions{display:flex;align-items:center;gap:18px;flex-wrap:wrap}
+  .hero .btn-ghost{color:#e8ebf2;border-color:rgba(212,175,55,.45)}
+  .photo{position:relative;justify-self:center}
+  .photo-frame{width:min(360px,80vw);aspect-ratio:4/5;border-radius:22px;overflow:hidden;box-shadow:var(--shadow-lg);border:1px solid rgba(212,175,55,.35);background:linear-gradient(170deg,#122c52,#0a1c36)}
+  .photo-frame img{width:100%;height:100%;object-fit:cover;display:block}
+  .photo::after{content:"";position:absolute;inset-inline-start:-22px;inset-block-end:-22px;width:120px;height:120px;border-inline-start:2px solid var(--gold-bright);border-block-end:2px solid var(--gold-bright);border-radius:0 0 0 26px;opacity:.75;pointer-events:none}
+  .photo-fallback{width:100%;height:100%;display:grid;place-items:center;text-align:center;padding:24px}
+  .photo-fallback .mono{font-family:var(--serif);font-weight:900;font-size:88px;color:var(--gold-soft);line-height:1}
+  .photo-fallback p{color:#9fb0ca;font-size:14px;margin-block-start:10px}
+  .photo-badge{position:absolute;inset-inline-end:-14px;inset-block-start:26px;background:var(--gold-bright);color:var(--navy-deep);font-weight:800;font-size:13.5px;padding:8px 16px;border-radius:999px;box-shadow:0 8px 20px rgba(0,0,0,.3)}
+
+  /* Trust strip */
+  .trust{background:var(--navy-deep);color:#d9dfe9;padding-block:26px;border-top:1px solid rgba(212,175,55,.14)}
+  .trust .row{display:flex;justify-content:space-between;gap:22px;flex-wrap:wrap}
+  .trust .item{display:flex;align-items:center;gap:11px;font-weight:600;font-size:15.5px}
+  .trust .item svg{color:var(--gold-bright);flex:none}
+
+  /* Problem */
+  .pains{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-block-start:44px}
+  .pain{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:28px;box-shadow:var(--shadow)}
+  .pain .q{font-family:var(--serif);font-weight:700;font-size:21px;color:var(--navy);margin-block-end:8px}
+  .pain p{color:var(--ink2);font-size:16px}
+
+  /* Story */
+  .story{background:linear-gradient(180deg,#fff 0%,var(--bg) 100%)}
+  .story .grid{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:start}
+  .story blockquote{font-family:var(--serif);font-size:23px;font-weight:500;line-height:1.55;color:var(--navy);border-inline-start:3px solid var(--gold-bright);padding-inline-start:22px;margin-block:26px}
+  .story p{color:var(--ink2);margin-block-end:16px}
+  .cred-card{background:var(--navy);color:#eef1f7;border-radius:var(--radius);padding:34px;box-shadow:var(--shadow-lg);position:sticky;top:96px}
+  .cred-card h3{color:var(--gold-soft);font-family:var(--serif);font-size:22px;margin-block-end:18px}
+  .cred-card ul{list-style:none}
+  .cred-card li{display:flex;gap:13px;align-items:flex-start;padding-block:11px;border-bottom:1px solid rgba(255,255,255,.08);font-size:16px}
+  .cred-card li:last-child{border-bottom:0}
+  .cred-card svg{color:var(--gold-bright);flex:none;margin-block-start:4px}
+  .video-link{display:inline-flex;align-items:center;gap:10px;color:var(--navy);font-weight:700;text-decoration:none;border-bottom:2px solid var(--gold-bright);padding-block-end:2px}
+  .video-link:hover{color:var(--gold)}
+
+  /* Services */
+  .services{background:var(--bg)}
+  .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-block-start:46px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:30px;box-shadow:var(--shadow);transition:transform .18s ease, box-shadow .18s ease}
+  .card:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg)}
+  .card .icon{width:52px;height:52px;border-radius:13px;background:var(--gold-tint);display:grid;place-items:center;color:var(--gold);margin-block-end:18px}
+  .card p{color:var(--ink2);font-size:16px}
+
+  /* Award */
+  .award{background:
+      radial-gradient(700px 300px at 85% 0%, rgba(212,175,55,.14), transparent 60%),
+      linear-gradient(160deg,var(--navy-deep),var(--navy));color:#f0ede4}
+  .award .grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:54px;align-items:center}
+  .award-photo{border-radius:var(--radius);overflow:hidden;border:1px solid rgba(212,175,55,.35);box-shadow:var(--shadow-lg);aspect-ratio:4/5;max-width:400px;margin-inline:auto;background:linear-gradient(170deg,#122c52,#0a1c36)}
+  .award-photo img{width:100%;height:100%;object-fit:cover;object-position:center top;display:block}
+  .award blockquote{font-family:var(--serif);font-size:24px;line-height:1.5;color:#fdf9ee;margin-block:20px 14px}
+  .award .who{color:var(--gold-soft);font-weight:700}
+  .award .sub{color:#b9c3d6}
+
+  /* Steps */
+  .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-block-start:46px;counter-reset:step}
+  .step{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:32px 28px;box-shadow:var(--shadow);position:relative}
+  .step::before{counter-increment:step;content:"0" counter(step);font-family:var(--serif);font-weight:900;font-size:44px;color:var(--gold-tint);-webkit-text-stroke:1.5px var(--gold-bright);position:absolute;inset-inline-end:22px;inset-block-start:14px;line-height:1}
+  .step p{color:var(--ink2);font-size:16px}
+
+  /* Videos */
+  .vids{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;margin-block-start:46px}
+  .vid{display:flex;gap:20px;align-items:stretch;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:18px;box-shadow:var(--shadow);text-decoration:none;color:inherit;transition:transform .18s ease, box-shadow .18s ease}
+  .vid:hover{transform:translateY(-3px);box-shadow:var(--shadow-lg)}
+  .vid .thumb{position:relative;flex:none;width:96px;aspect-ratio:9/16;border-radius:12px;overflow:hidden;background:linear-gradient(170deg,#122c52,#0a1c36)}
+  .vid .thumb img{width:100%;height:100%;object-fit:cover;display:block}
+  .vid .thumb .play{position:absolute;inset:0;margin:auto;width:40px;height:40px;border-radius:50%;background:rgba(11,31,58,.72);color:var(--gold-bright);display:grid;place-items:center;box-shadow:0 4px 12px rgba(0,0,0,.35)}
+  .vid .thumb .play svg{transform:translateX(1px)}
+  .vid .body{display:flex;flex-direction:column;justify-content:center;padding-block:4px}
+  .vid h3{margin-block-end:4px}
+  .vid p{color:var(--ink2);font-size:15.5px}
+  .vid .views{margin-block-start:10px;font-size:13.5px;color:#8a6d15;font-weight:700}
+
+  /* Final CTA */
+  .final{background:
+      radial-gradient(800px 380px at 50% 120%, rgba(212,175,55,.18), transparent 65%),
+      linear-gradient(165deg,var(--navy) 0%,var(--navy-deep) 100%);color:#f4f2ec}
+  .final .sub{color:#c4cddd}
+  .contact-row{display:flex;justify-content:center;gap:34px;flex-wrap:wrap;margin-block-start:36px;font-size:16.5px}
+  .contact-row a,.contact-row span{color:#e6eaf2;text-decoration:none;display:inline-flex;align-items:center;gap:9px}
+  .contact-row a:hover{color:var(--gold-soft)}
+  .contact-row svg{color:var(--gold-bright)}
+
+  footer{background:var(--navy-deep);color:#8f9cb3;padding-block:34px;font-size:14px;border-top:1px solid rgba(212,175,55,.12)}
+  footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;align-items:center}
+  footer a{color:#c3cbdb;text-decoration:none}
+  footer a:hover{color:var(--gold-soft)}
+  .disclaimer{background:var(--navy-deep);color:#8a99b0;font-size:12.5px;padding-block:0 26px}
+  .disclaimer .wrap{border-top:1px solid rgba(255,255,255,.06);padding-block-start:18px;line-height:1.6}
+
+  /* WhatsApp float */
+  .wa-float{position:fixed;inset-inline-end:22px;inset-block-end:22px;z-index:60;width:60px;height:60px;border-radius:50%;background:#25d366;display:grid;place-items:center;box-shadow:0 10px 26px rgba(0,0,0,.3);transition:transform .16s ease}
+  .wa-float:hover{transform:scale(1.08)}
+  .wa-float:focus-visible{outline:3px solid var(--navy);outline-offset:3px}
+
+  /* Reveal on scroll (רק כשיש JS — אחרת הכול גלוי) */
+  .js .reveal{opacity:0;transform:translateY(22px);transition:opacity .6s ease, transform .6s ease}
+  .js .reveal.in{opacity:1;transform:none}
+
+  @media(max-width:900px){
+    section{padding-block:64px}
+    .hero{padding-block:64px}
+    .hero .grid,.story .grid,.award .grid{grid-template-columns:1fr;gap:40px}
+    .cards,.pains,.steps{grid-template-columns:1fr}
+    .vids{grid-template-columns:1fr}
+    .cred-card{position:static}
+    .trust .row{justify-content:center;gap:16px}
+    .hero-actions{flex-direction:column;align-items:stretch}
+    .btn,.btn-ghost{justify-content:center;text-align:center}
+    .brand-sub{display:none}
+  }
+</style>
+</head>
+<body>
+
+<div class="nav-bar"><div class="wrap"><nav aria-label="ניווט ראשי">
+  <a class="brand" href="#top">
+    <span class="brand-mark" aria-hidden="true">א</span>
+    <span>
+      <span class="brand-name">אברהם אלון</span><br>
+      <span class="brand-sub">בית לתכנון פיננסי</span>
+    </span>
+  </a>
+  <a class="btn nav-cta" href="https://wa.me/972543333637?text=%D7%94%D7%99%D7%99%20%D7%90%D7%91%D7%A8%D7%94%D7%9D%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%AA%D7%90%D7%9D%20%D7%A9%D7%99%D7%97%D7%AA%20%D7%94%D7%99%D7%9B%D7%A8%D7%95%D7%AA">לתיאום שיחה</a>
+</nav></div></div>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="top"><div class="wrap grid">
+  <div>
+    <span class="kicker right">ניהול הון &nbsp;•&nbsp; השקעות &nbsp;•&nbsp; תכנון מס</span>
+    <h1>הכסף שלכם יכול לעבוד <em>בצורה חכמה, יציבה ומדויקת</em></h1>
+    <p class="sub">תכנון פיננסי אישי ואובייקטיבי לבעלי הון — ניהול הון, מיסוי, פרישה והעברה בין־דורית. תחת קורת גג אחת, בליווי צמוד ובשירות ללא פשרות.</p>
+    <ul>
+      <li>מתכנן פיננסי בעל רישיון מטעם משרד האוצר</li>
+      <li>ראייה אובייקטיבית — התוכנית נבנית סביב הצרכים שלכם, לא סביב מוצר</li>
+      <li>ליווי אישי לאורך כל הדרך, לא רק פגישה אחת</li>
+    </ul>
+    <div class="hero-actions">
+      <a class="btn" href="https://wa.me/972543333637?text=%D7%94%D7%99%D7%99%20%D7%90%D7%91%D7%A8%D7%94%D7%9D%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%AA%D7%90%D7%9D%20%D7%A9%D7%99%D7%97%D7%AA%20%D7%94%D7%99%D7%9B%D7%A8%D7%95%D7%AA">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.4 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.4-.7-2.9-1.2-4.7-4.1-4.9-4.3-.1-.2-1.1-1.5-1.1-2.9s.7-2 .9-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .6l-.4.6-.5.5c-.2.2-.3.4-.1.7.2.3.8 1.4 1.8 2.2 1.2 1.1 2.3 1.4 2.6 1.6.3.1.5.1.7-.1l1-1.2c.2-.3.4-.2.7-.1l2 .9c.3.2.5.3.6.4 0 .2 0 .7-.2 1.2Z"/></svg>
+        לתיאום שיחת היכרות
+      </a>
+      <a class="btn-ghost" href="tel:+972543333637">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3A19.5 19.5 0 0 1 5.2 13 19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8.1 10a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.9.5 2.9.7a2 2 0 0 1 1.6 1.9Z"/></svg>
+        <span class="num">054-333-3637</span>
+      </a>
+    </div>
+    <p class="micro">שיחת ההיכרות ללא עלות וללא התחייבות</p>
+  </div>
+  <div class="photo">
+    <figure class="photo-frame">
+      <img src="images/portrait.jpg" alt="אברהם אלון, מתכנן פיננסי" width="960" height="958" fetchpriority="high"
+           onerror="this.outerHTML='&lt;div class=&quot;photo-fallback&quot;&gt;&lt;div&gt;&lt;div class=&quot;mono&quot;&gt;א·א&lt;/div&gt;&lt;p&gt;כאן תוצג תמונת הפורטרט&lt;br&gt;(images/portrait.jpg)&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;'">
+    </figure>
+    <span class="photo-badge">מגן הצטיינות 2025</span>
+  </div>
+</div></section>
+
+<!-- ============ TRUST STRIP ============ -->
+<div class="trust"><div class="wrap"><div class="row">
+  <span class="item"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/><path d="m9 12 2 2 4-4"/></svg> רישיון מטעם משרד האוצר</span>
+  <span class="item"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 10v6M2 10l10-5 10 5-10 5-10-5Z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg> תואר ראשון בהצטיינות יתרה</span>
+  <span class="item"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="8" r="6"/><path d="M15.5 13 17 22l-5-3-5 3 1.5-9"/></svg> מגן הצטיינות על שירות ללקוחות</span>
+  <span class="item"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> בעולמות הפיננסים מגיל 16</span>
+</div></div></div>
+
+<!-- ============ PROBLEM ============ -->
+<section><div class="wrap center reveal">
+  <span class="kicker">רגע של כנות</span>
+  <h2>אני בטוח שיש לכם כסף.<br>אבל אתם באמת יודעים מה קורה איתו?</h2>
+  <p class="sub">רוב האנשים עובדים קשה בשביל הכסף — אבל הכסף שלהם לא עובד בשבילם. זה הזמן לעצור ולעשות סדר במספרים.</p>
+  <div class="pains">
+    <div class="pain"><div class="q">כמה מס אתם משלמים?</div><p>רוב האנשים לא יודעים כמה מס הם משלמים על החיסכון וההשקעות שלהם — ואילו פטורים והטבות הם מפסידים כל שנה.</p></div>
+    <div class="pain"><div class="q">איך הכסף שלכם מנוהל?</div><p>קרנות, פוליסות, פיקדונות ותיקים שנפתחו לאורך השנים — בלי יד מכוונת אחת ובלי תוכנית שמחברת ביניהם.</p></div>
+    <div class="pain"><div class="q">מה יהיה כשתפסיקו לעבוד?</div><p>מה יישאר לכם בפרישה, ומה יעבור הלאה לילדים ולנכדים? בלי תכנון — התשובה נקבעת בשבילכם.</p></div>
+  </div>
+</div></section>
+
+<!-- ============ STORY ============ -->
+<section class="story" id="about"><div class="wrap grid">
+  <div class="reveal">
+    <span class="kicker right">הסיפור שלי</span>
+    <h2>נכנסתי לעולם הפיננסים בגיל 16. מסיבה אישית מאוד.</h2>
+    <blockquote>ראיתי את אבא שלי מפסיד הון משמעותי כתוצאה מטעויות פיננסיות שאפשר היה למנוע. מאז — זו השליחות שלי.</blockquote>
+    <p>הדרך שלי בעולמות הפיננסים התחילה מכאב אישי: ההבנה שבלי ידע, בלי ליווי מקצועי ובלי מישהו אובייקטיבי לצידך — גם הון שנצבר בעמל של שנים יכול להישחק מהחלטות שגויות.</p>
+    <p>היום אני מלווה בעלי הון ומשפחות בתכנון פיננסי מקיף — אופטימיזציה של ההון, תכנון מס, תכנון פרישה והעברה בין־דורית — בגישה אישית, אובייקטיבית וללא פשרות. המטרה שלי פשוטה: שתדעו בכל רגע שהכסף שלכם בידיים טובות, ושהוא עובד בשבילכם.</p>
+    <p style="margin-block-start:24px">
+      <a class="video-link" href="https://www.facebook.com/reel/2442973982889441" target="_blank" rel="noopener">
+        ▶ צפו בסרטון — הסיפור המלא (דקה)
+      </a>
+    </p>
+  </div>
+  <aside class="cred-card reveal" aria-label="הסמכות וניסיון">
+    <h3>למה אפשר לסמוך עליי</h3>
+    <ul>
+      <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/><path d="m9 12 2 2 4-4"/></svg> מתכנן פיננסי בעל רישיון מטעם משרד האוצר</li>
+      <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 10v6M2 10l10-5 10 5-10 5-10-5Z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg> תואר ראשון בהצטיינות יתרה</li>
+      <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="8" r="6"/><path d="M15.5 13 17 22l-5-3-5 3 1.5-9"/></svg> מגן הצטיינות 2025 על שירות ללקוחות</li>
+      <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.9M16 3.1a4 4 0 0 1 0 7.8"/></svg> עצמאות מול חברות הביטוח ובתי ההשקעות — ראייה אובייקטיבית</li>
+      <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> בעולמות הפיננסים מגיל 16</li>
+    </ul>
+  </aside>
+</div></section>
+
+<!-- ============ SERVICES ============ -->
+<section class="services" id="services"><div class="wrap">
+  <div class="center reveal">
+    <span class="kicker">תחומי התמחות</span>
+    <h2>כל התמונה הפיננסית. תחת קורת גג אחת.</h2>
+    <p class="sub">לא עוד מוצר בודד או פתרון נקודתי — תוכנית אחת שמחברת את כל חלקי ההון שלכם למטרות של החיים שלכם.</p>
+  </div>
+  <div class="cards">
+    <div class="card reveal">
+      <div class="icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 21h18M5 21V8l7-5 7 5v13M9 21v-6h6v6"/></svg></div>
+      <h3>ניהול הון</h3><p>הכסף שלכם מנוהל לפי המטרות שלכם — לא לפי תבנית גנרית של בית השקעות.</p>
+    </div>
+    <div class="card reveal">
+      <div class="icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M19 5 5 19M6.5 9a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Zm11 11a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z"/></svg></div>
+      <h3>תכנון מס</h3><p>לשלם רק את מה שבאמת צריך — ולנצל כל פטור, הטבה ומדרגה שהחוק מאפשר.</p>
+    </div>
+    <div class="card reveal">
+      <div class="icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 3v16a2 2 0 0 0 2 2h16"/><path d="m7 14 4-4 4 3 5-6"/></svg></div>
+      <h3>השקעות</h3><p>תיק מפוזר נכון — גם ברמה המטבעית — שמותאם לצרכים שמשתנים לאורך החיים.</p>
+    </div>
+    <div class="card reveal">
+      <div class="icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
+      <h3>תכנון פרישה</h3><p>לדעת כבר היום, במספרים, מה יהיה לכם ביום שתחליטו להפסיק לעבוד.</p>
+    </div>
+    <div class="card reveal">
+      <div class="icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.9M16 3.1a4 4 0 0 1 0 7.8"/></svg></div>
+      <h3>העברה בין־דורית</h3><p>להעביר את ההון לילדים ולנכדים בצורה מסודרת וחכמה — תוך מזעור המס ככל שניתן.</p>
+    </div>
+    <div class="card reveal">
+      <div class="icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 2v20M17 7H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
+      <h3>קרנות השתלמות ואופטימיזציה</h3><p>לנצל עד הסוף את האפיק הפטור ממס רווחי הון — שרוב האנשים משאירים על השולחן.</p>
+    </div>
+  </div>
+</div></section>
+
+<!-- ============ AWARD ============ -->
+<section class="award"><div class="wrap grid">
+  <figure class="award-photo reveal">
+    <img src="images/award.jpg" alt="אברהם אלון מקבל מגן הצטיינות 2025 על שירות ללקוחות" width="896" height="1195" loading="lazy"
+         onerror="this.outerHTML='&lt;div class=&quot;photo-fallback&quot; style=&quot;height:100%&quot;&gt;&lt;div&gt;&lt;div class=&quot;mono&quot; style=&quot;font-size:54px&quot;&gt;2025&lt;/div&gt;&lt;p&gt;כאן תוצג תמונת המגן (images/award.jpg)&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;'">
+  </figure>
+  <div class="reveal">
+    <span class="kicker right">הוקרה</span>
+    <h2>מגן הצטיינות 2025 על השירות ללקוחות</h2>
+    <blockquote>"עבורנו זה לא רק פרס על הקיר — אלא אישור לכך שהדרך שבחרנו, שירות ללא פשרות ומקצוענות, היא הדרך הנכונה."</blockquote>
+    <p class="who">— אברהם אלון</p>
+    <p class="sub" style="margin-block-start:16px">תודה לכל מי שצועד איתנו בדרך הזו.</p>
+  </div>
+</div></section>
+
+<!-- ============ HOW IT WORKS ============ -->
+<section id="how"><div class="wrap">
+  <div class="center reveal">
+    <span class="kicker">איך זה עובד</span>
+    <h2>שלושה שלבים לסדר פיננסי</h2>
+  </div>
+  <div class="steps">
+    <div class="step reveal"><h3>שיחת היכרות</h3><p>שיחה ראשונה ללא עלות וללא התחייבות — מכירים, מבינים מה חשוב לכם ומה מטריד אתכם.</p></div>
+    <div class="step reveal"><h3>מיפוי ותכנון</h3><p>מיפוי מלא של התמונה הפיננסית — נכסים, קרנות, מיסוי — ובניית תוכנית מותאמת למטרות החיים שלכם.</p></div>
+    <div class="step reveal"><h3>ליווי שוטף</h3><p>יישום התוכנית וליווי צמוד לאורך הדרך — כי החיים משתנים, והתוכנית צריכה להשתנות איתם.</p></div>
+  </div>
+</div></section>
+
+<!-- ============ VIDEOS ============ -->
+<section class="services" id="videos"><div class="wrap">
+  <div class="center reveal">
+    <span class="kicker">רגע של ערך</span>
+    <h2>דברים ששווה לדעת על הכסף שלכם</h2>
+    <p class="sub">סרטונים קצרים מהעמוד שלי — דקה של ידע שיכולה להיות שווה הרבה כסף.</p>
+  </div>
+  <div class="vids">
+    <a class="vid reveal" href="https://www.facebook.com/reel/2442973982889441" target="_blank" rel="noopener">
+      <div class="thumb"><img src="images/reel-story.jpg" alt="" loading="lazy" width="240" height="427"><span class="play"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></span></div>
+      <div class="body"><h3>הסיפור שלי</h3><p>למה נכנסתי לתחום בגיל 16, ומה למדתי מהמחיר שאבא שלי שילם.</p><span class="views"><span class="num">395</span> צפיות</span></div>
+    </a>
+    <a class="vid reveal" href="https://www.facebook.com/reel/1384162260443217" target="_blank" rel="noopener">
+      <div class="thumb"><img src="images/reel-money.jpg" alt="" loading="lazy" width="240" height="427"><span class="play"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></span></div>
+      <div class="body"><h3>מה קורה עם הכסף שלכם?</h3><p>רוב האנשים לא יודעים כמה מס הם משלמים ואיך הכסף מנוהל. זה הזמן לעצור.</p><span class="views"><span class="num">252</span> צפיות</span></div>
+    </a>
+    <a class="vid reveal" href="https://www.facebook.com/reel/1639251870680127" target="_blank" rel="noopener">
+      <div class="thumb"><img src="images/reel-legacy.jpg" alt="" loading="lazy" width="240" height="427"><span class="play"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></span></div>
+      <div class="body"><h3>העברה בין־דורית</h3><p>איך מעבירים הון לילדים ולנכדים בצורה חכמה — ובמינימום מס.</p><span class="views"><span class="num">213</span> צפיות</span></div>
+    </a>
+    <a class="vid reveal" href="https://www.facebook.com/reel/1741588476852521" target="_blank" rel="noopener">
+      <div class="thumb"><img src="images/reel-keren.jpg" alt="" loading="lazy" width="240" height="427"><span class="play"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></span></div>
+      <div class="body"><h3>קרן ההשתלמות שלכם</h3><p>האפיק היחיד שפטור ממס רווחי הון — והרוב לא מנצלים אותו עד הסוף.</p><span class="views"><span class="num">98</span> צפיות</span></div>
+    </a>
+  </div>
+</div></section>
+
+<!-- ============ FINAL CTA ============ -->
+<section class="final" id="contact"><div class="wrap center reveal">
+  <span class="kicker">מתחילים בשיחה</span>
+  <h2>רוצים לדעת מה באמת קורה עם הכסף שלכם?</h2>
+  <p class="sub">שיחת היכרות אחת יכולה לעשות סדר של שנים. השאירו הודעה — ואני אחזור אליכם.</p>
+  <p style="margin-block-start:30px">
+    <a class="btn" href="https://wa.me/972543333637?text=%D7%94%D7%99%D7%99%20%D7%90%D7%91%D7%A8%D7%94%D7%9D%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%AA%D7%90%D7%9D%20%D7%A9%D7%99%D7%97%D7%AA%20%D7%94%D7%99%D7%9B%D7%A8%D7%95%D7%AA">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.4 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.4-.7-2.9-1.2-4.7-4.1-4.9-4.3-.1-.2-1.1-1.5-1.1-2.9s.7-2 .9-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .6l-.4.6-.5.5c-.2.2-.3.4-.1.7.2.3.8 1.4 1.8 2.2 1.2 1.1 2.3 1.4 2.6 1.6.3.1.5.1.7-.1l1-1.2c.2-.3.4-.2.7-.1l2 .9c.3.2.5.3.6.4 0 .2 0 .7-.2 1.2Z"/></svg>
+      לתיאום שיחת היכרות בוואטסאפ
+    </a>
+  </p>
+  <p class="micro">ללא עלות · ללא התחייבות · דיסקרטיות מלאה</p>
+  <div class="contact-row">
+    <a href="tel:+972543333637"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3A19.5 19.5 0 0 1 5.2 13 19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8.1 10a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.9.5 2.9.7a2 2 0 0 1 1.6 1.9Z"/></svg><span class="num">054-333-3637</span></a>
+    <a href="mailto:avraham@a-fin.co.il"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg><span class="num">avraham@a-fin.co.il</span></a>
+    <span><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>רח' השיש 3, חיפה</span>
+    <a href="https://www.facebook.com/profile.php?id=61584216245835" target="_blank" rel="noopener"><svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22 12a10 10 0 1 0-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.3c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.4 2.9h-2.4v7A10 10 0 0 0 22 12Z"/></svg>עמוד הפייסבוק</a>
+  </div>
+</div></section>
+
+<footer><div class="wrap">
+  <span>© <span class="num">2026</span> אברהם אלון — בית לתכנון פיננסי · רח' השיש 3, חיפה</span>
+  <span><a href="https://wa.me/972543333637">וואטסאפ</a> · <a href="tel:+972543333637">טלפון</a> · <a href="mailto:avraham@a-fin.co.il">מייל</a></span>
+</div></footer>
+<div class="disclaimer"><div class="wrap">
+  האמור באתר זה אינו מהווה ייעוץ ו/או שיווק השקעות ו/או ייעוץ מס, ואינו תחליף לייעוץ אישי המתחשב בנתונים ובצרכים הייחודיים של כל אדם.
+</div></div>
+
+<a class="wa-float" href="https://wa.me/972543333637?text=%D7%94%D7%99%D7%99%20%D7%90%D7%91%D7%A8%D7%94%D7%9D%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%AA%D7%90%D7%9D%20%D7%A9%D7%99%D7%97%D7%AA%20%D7%94%D7%99%D7%9B%D7%A8%D7%95%D7%AA" aria-label="שליחת הודעת וואטסאפ">
+  <svg width="30" height="30" viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.4 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.4-.7-2.9-1.2-4.7-4.1-4.9-4.3-.1-.2-1.1-1.5-1.1-2.9s.7-2 .9-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .6l-.4.6-.5.5c-.2.2-.3.4-.1.7.2.3.8 1.4 1.8 2.2 1.2 1.1 2.3 1.4 2.6 1.6.3.1.5.1.7-.1l1-1.2c.2-.3.4-.2.7-.1l2 .9c.3.2.5.3.6.4 0 .2 0 .7-.2 1.2Z"/></svg>
+</a>
+
+<script>
+  if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches && 'IntersectionObserver' in window) {
+    const io = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+  } else {
+    document.querySelectorAll('.reveal').forEach(el => el.classList.add('in'));
+  }
+  const smooth = !window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', e => {
+      const h = a.getAttribute('href');
+      if (!h || h.length < 2) return;
+      const t = document.querySelector(h);
+      if (t) { e.preventDefault(); t.scrollIntoView({ behavior: smooth ? 'smooth' : 'auto' }); history.pushState(null, '', h); }
+    });
+  });
+</script>
+</body>
+</html>
